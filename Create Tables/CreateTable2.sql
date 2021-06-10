@@ -1,0 +1,4 @@
+CREATE TABLE IngList(
+	Dish_ID INT REFERENCES Dish(Dish_ID),
+	ING_ID INT REFERENCES Ingredients(Ing_ID)
+)

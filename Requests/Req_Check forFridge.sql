@@ -1,3 +1,3 @@
-select *
-from Storage
-where (IsFridge=1)
+SELECT Storage_ID
+FROM Storage
+WHERE (IsFridge=1)
