@@ -1,0 +1,5 @@
+CREATE TABLE StoreList(
+	SL_ID INT PRIMARY KEY,
+	Store_ID INT REFERENCES Storage(Storage_ID),
+	ING_ID INT REFERENCES Ingredients(Ing_ID)
+)

@@ -1,3 +1,3 @@
 select *  
 from Ingredients 
-where Date_expired < CONVERT (DATE, GETDATE())
+where DateExpired < CONVERT (DATE, GETDATE())

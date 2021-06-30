@@ -1,0 +1,4 @@
+SELECT IngName FROM Ingredients WHERE
+Ing_ID IN
+(SELECT ING_ID
+FROM IngList WHERE Dish_ID = 1)
