@@ -1,0 +1,1 @@
+Select Concat(LastName, ' ', FirstName) AS FIRSTNAME from Person.Person
