@@ -1,5 +1,5 @@
-/*Показать товар с самой маленькой стандартной ценой (цена больше нуля) (Таблица Production.Product). 
-Показать поля [Name], StandardCost */
+п»ї/*РџРѕРєР°Р·Р°С‚СЊ С‚РѕРІР°СЂ СЃ СЃР°РјРѕР№ РјР°Р»РµРЅСЊРєРѕР№ СЃС‚Р°РЅРґР°СЂС‚РЅРѕР№ С†РµРЅРѕР№ (С†РµРЅР° Р±РѕР»СЊС€Рµ РЅСѓР»СЏ) (РўР°Р±Р»РёС†Р° Production.Product). 
+РџРѕРєР°Р·Р°С‚СЊ РїРѕР»СЏ [Name], StandardCost */
 SELECT [Name], StandardCost
 FROM Production.Product
 WHERE StandardCost = (SELECT MIN (StandardCost)FROM Production.Product WHERE StandardCost > 0)

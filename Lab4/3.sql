@@ -1,5 +1,5 @@
-/* Показать товары, для которых существует только один стиль в одном
-цвете (стиль и цвет определен) (Таблица Production.Product). Показать поля [Name], Style и Color. */
+п»ї/* РџРѕРєР°Р·Р°С‚СЊ С‚РѕРІР°СЂС‹, РґР»СЏ РєРѕС‚РѕСЂС‹С… СЃСѓС‰РµСЃС‚РІСѓРµС‚ С‚РѕР»СЊРєРѕ РѕРґРёРЅ СЃС‚РёР»СЊ РІ РѕРґРЅРѕРј
+С†РІРµС‚Рµ (СЃС‚РёР»СЊ Рё С†РІРµС‚ РѕРїСЂРµРґРµР»РµРЅ) (РўР°Р±Р»РёС†Р° Production.Product). РџРѕРєР°Р·Р°С‚СЊ РїРѕР»СЏ [Name], Style Рё Color. */
 SELECT DISTINCT p1.[Name], p1.Style, p1.Color
 FROM Production.Product AS p1
 WHERE p1.Style IS NOT NULL AND p1.Color IS NOT NULL AND EXISTS (SELECT COUNT(DISTINCT p2.Style) FROM Production.Product AS p2 WHERE p2.Style IS NOT NULL AND p1.Color = p2.Color HAVING COUNT(DISTINCT p2.Style) = 1)
