@@ -1,2 +1,8 @@
-SELECT ROW_NUMBER() over (Order By BusinessEntityID) as '№',*
+/*Создать отчет, содержащий подробную информацию о продавцах
+(BusinessEntityID) на основе годовых продаж (SalesYTD),
+отсортированных в порядке убывания, и затем сгруппированных по
+четырем категориям. Для выполнения задания необходимо проделать
+следующие шаги:
+a) создайте запрос, возвращающий пронумерованные строки из
+таблицы Sales.SalesPerson;*/SELECT ROW_NUMBER() over (Order By BusinessEntityID) as '№',*
 FROM Sales.SalesPerson

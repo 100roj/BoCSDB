@@ -1,3 +1,5 @@
+/* Показать товары, цена которых больше средней цены в любой линейке продуктов 
+(линейка продуктов определена) (Таблица Production.Product) */
 SELECT DISTINCT ListPrice,ProductLine,[Name]
 FROM Production.Product
 WHERE ProductLine IS NOT NULL 
