@@ -1,4 +1,4 @@
-/* Показать номера аккаунтов (AcCountNumber) и поля FirstName, LastName из таблиц Person.Person, Sales.Customer. */
+/*ГЏГ®ГЄГ Г§Г ГІГј Г­Г®Г¬ГҐГ°Г  Г ГЄГЄГ ГіГ­ГІГ®Гў (AcCountNumber) ГЁ ГЇГ®Г«Гї FirstName, LastName ГЁГ§ ГІГ ГЎГ«ГЁГ¶ Person.Person, Sales.Customer.*/
 SELECT AccountNumber, FirstName, LastName
 FROM Person.Person AS Table1
 INNER JOIN Sales.Customer AS Table2
