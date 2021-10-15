@@ -1,5 +1,5 @@
-/*Показать список продуктов (поле Name) в котором указано, есть ли у продукта единицы измерения веса или нет, из таблиц 
-Production.Product, Production.UnitMeasure, используя LEFT OUTER JOIN */
+п»ї/*РџРѕРєР°Р·Р°С‚СЊ СЃРїРёСЃРѕРє РїСЂРѕРґСѓРєС‚РѕРІ (РїРѕР»Рµ Name) РІ РєРѕС‚РѕСЂРѕРј СѓРєР°Р·Р°РЅРѕ, РµСЃС‚СЊ Р»Рё Сѓ РїСЂРѕРґСѓРєС‚Р° РµРґРёРЅРёС†С‹ РёР·РјРµСЂРµРЅРёСЏ РІРµСЃР° РёР»Рё РЅРµС‚, РёР· С‚Р°Р±Р»РёС† 
+Production.Product, Production.UnitMeasure, РёСЃРїРѕР»СЊР·СѓСЏ LEFT OUTER JOIN */
 SELECT Product.Name, UnitMeasure.Name
 FROM 
 Production.Product AS Product

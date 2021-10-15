@@ -1,4 +1,4 @@
-/*Показать общее количество товара для каждого ProductID.*/
+п»ї/*РџРѕРєР°Р·Р°С‚СЊ РѕР±С‰РµРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР° РґР»СЏ РєР°Р¶РґРѕРіРѕ ProductID.*/
 Select ProductID, Sum(Quantity)
 From Production.ProductInventory
 Group by ProductID

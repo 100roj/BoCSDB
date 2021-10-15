@@ -1,5 +1,5 @@
-/*Показать список скидок на единицу продукции (UnitPriceDiscount), к которым относятся несколько продуктов (ProductID), 
-из таблицы Sales.SalesOrderDetail, используя SELF JOIN. */
+п»ї/*РџРѕРєР°Р·Р°С‚СЊ СЃРїРёСЃРѕРє СЃРєРёРґРѕРє РЅР° РµРґРёРЅРёС†Сѓ РїСЂРѕРґСѓРєС†РёРё (UnitPriceDiscount), Рє РєРѕС‚РѕСЂС‹Рј РѕС‚РЅРѕСЃСЏС‚СЃСЏ РЅРµСЃРєРѕР»СЊРєРѕ РїСЂРѕРґСѓРєС‚РѕРІ (ProductID), 
+РёР· С‚Р°Р±Р»РёС†С‹ Sales.SalesOrderDetail, РёСЃРїРѕР»СЊР·СѓСЏ SELF JOIN. */
 SELECT DISTINCT Sales1.ProductID, Sales1.UnitPriceDiscount
 FROM Sales.SalesOrderDetail AS Sales1
 INNER JOIN Sales.SalesOrderDetail AS Sales2

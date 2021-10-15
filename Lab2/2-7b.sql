@@ -1,6 +1,6 @@
-/*Создать отчет итоговых столбцов с использованием функции
+п»ї/*РЎРѕР·РґР°С‚СЊ РѕС‚С‡РµС‚ РёС‚РѕРіРѕРІС‹С… СЃС‚РѕР»Р±С†РѕРІ СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј С„СѓРЅРєС†РёРё
 GROUPING:
-b. оператор CUBE должен быть использован со множеством
-столбцов, оператор GROUPING используется с одним из
-используемых столбцов.*/SELECT Grouping (ProductID) AS ID, GROUPING(Quantity) AS Grouping FROM Production.ProductInventory
+b. РѕРїРµСЂР°С‚РѕСЂ CUBE РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅ СЃРѕ РјРЅРѕР¶РµСЃС‚РІРѕРј
+СЃС‚РѕР»Р±С†РѕРІ, РѕРїРµСЂР°С‚РѕСЂ GROUPING РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ СЃ РѕРґРЅРёРј РёР·
+РёСЃРїРѕР»СЊР·СѓРµРјС‹С… СЃС‚РѕР»Р±С†РѕРІ.*/SELECT Grouping (ProductID) AS ID, GROUPING(Quantity) AS Grouping FROM Production.ProductInventory
 GROUP BY CUBE(ProductID, Quantity);

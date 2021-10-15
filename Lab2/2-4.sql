@@ -1,5 +1,5 @@
-/*Создать и запустить запрос, подсчитывающий сумму количества товара
-(Quantity) на каждой полке (Shelf) для каждого продукта
-(ProductID). Используйте оператор GROUP BY вместе с оператором
-ROLLUP (таблица Production.ProductInventory).*/Select ProductID, Shelf, Sum(Quantity) as 'Quantity' from Production.ProductInventory
+п»ї/*РЎРѕР·РґР°С‚СЊ Рё Р·Р°РїСѓСЃС‚РёС‚СЊ Р·Р°РїСЂРѕСЃ, РїРѕРґСЃС‡РёС‚С‹РІР°СЋС‰РёР№ СЃСѓРјРјСѓ РєРѕР»РёС‡РµСЃС‚РІР° С‚РѕРІР°СЂР°
+(Quantity) РЅР° РєР°Р¶РґРѕР№ РїРѕР»РєРµ (Shelf) РґР»СЏ РєР°Р¶РґРѕРіРѕ РїСЂРѕРґСѓРєС‚Р°
+(ProductID). РСЃРїРѕР»СЊР·СѓР№С‚Рµ РѕРїРµСЂР°С‚РѕСЂ GROUP BY РІРјРµСЃС‚Рµ СЃ РѕРїРµСЂР°С‚РѕСЂРѕРј
+ROLLUP (С‚Р°Р±Р»РёС†Р° Production.ProductInventory).*/Select ProductID, Shelf, Sum(Quantity) as 'Quantity' from Production.ProductInventory
 group by Rollup(ProductID, Shelf)

@@ -1,5 +1,5 @@
-/*Îïğåäåëèòü ñğåäíåå êîëè÷åñòâî òîâàğà íà êàæäîé ïîëêå, áîëüøåå 150,
-äëÿ õàğàêòåğèñòèêè ïğîäóêòà Bin = 1.*/
+ï»¿/*ĞĞ¿Ñ€ĞµĞ´ĞµĞ»Ğ¸Ñ‚ÑŒ ÑÑ€ĞµĞ´Ğ½ĞµĞµ ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ñ‚Ğ¾Ğ²Ğ°Ñ€Ğ° Ğ½Ğ° ĞºĞ°Ğ¶Ğ´Ğ¾Ğ¹ Ğ¿Ğ¾Ğ»ĞºĞµ, Ğ±Ğ¾Ğ»ÑŒÑˆĞµĞµ 150,
+Ğ´Ğ»Ñ Ñ…Ğ°Ñ€Ğ°ĞºÑ‚ĞµÑ€Ğ¸ÑÑ‚Ğ¸ĞºĞ¸ Ğ¿Ñ€Ğ¾Ğ´ÑƒĞºÑ‚Ğ° Bin = 1.*/
 SELECT ProductID, Shelf, SUM(Quantity) AS TotalQuantity, GROUPING(Shelf) AS ShelGrouping
 FROM Production.ProductInventory
 Where (Quantity>150) and (Bin=1)

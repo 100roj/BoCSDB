@@ -1,3 +1,3 @@
-/* Создание запроса, используя предикатсравнения. Показать все записи,  цена  (ListPrice)  которых меньше $100из  таблицы Production.Product, включить только поля ProductNumber, Name, ListPrice, Color, Size и Weight.*/
+п»ї/* РЎРѕР·РґР°РЅРёРµ Р·Р°РїСЂРѕСЃР°, РёСЃРїРѕР»СЊР·СѓСЏ РїСЂРµРґРёРєР°С‚СЃСЂР°РІРЅРµРЅРёСЏ. РџРѕРєР°Р·Р°С‚СЊ РІСЃРµ Р·Р°РїРёСЃРё,  С†РµРЅР°  (ListPrice)  РєРѕС‚РѕСЂС‹С… РјРµРЅСЊС€Рµ $100РёР·  С‚Р°Р±Р»РёС†С‹ Production.Product, РІРєР»СЋС‡РёС‚СЊ С‚РѕР»СЊРєРѕ РїРѕР»СЏ ProductNumber, Name, ListPrice, Color, Size Рё Weight.*/
 Select ProductNumber, Name, ListPrice, Color, Size, Weight from Production.Product where
 ListPrice < 100

@@ -1,5 +1,5 @@
-/*Показать список ProductID, которые содержатся в таблице Production.Product, 
-но не содержатся в таблице Production. ProductDocument. */
+п»ї/*РџРѕРєР°Р·Р°С‚СЊ СЃРїРёСЃРѕРє ProductID, РєРѕС‚РѕСЂС‹Рµ СЃРѕРґРµСЂР¶Р°С‚СЃСЏ РІ С‚Р°Р±Р»РёС†Рµ Production.Product, 
+РЅРѕ РЅРµ СЃРѕРґРµСЂР¶Р°С‚СЃСЏ РІ С‚Р°Р±Р»РёС†Рµ Production. ProductDocument. */
 SELECT ProductID
 FROM Production.Product
 EXCEPT

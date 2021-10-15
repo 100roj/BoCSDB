@@ -1,4 +1,4 @@
-/*Определить ассортимент товара (ProductID).*/
+п»ї/*РћРїСЂРµРґРµР»РёС‚СЊ Р°СЃСЃРѕСЂС‚РёРјРµРЅС‚ С‚РѕРІР°СЂР° (ProductID).*/
 Select Shelf, ProductID
 From Production.ProductInventory
 Order by Shelf

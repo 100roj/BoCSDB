@@ -1,7 +1,7 @@
-/*Создать отчет итоговых столбцов с использованием функции
+п»ї/*РЎРѕР·РґР°С‚СЊ РѕС‚С‡РµС‚ РёС‚РѕРіРѕРІС‹С… СЃС‚РѕР»Р±С†РѕРІ СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј С„СѓРЅРєС†РёРё
 GROUPING:
-a. создать запрос, который суммирует информацию (столбец
-Quantity) из таблицы Production.ProductInventory с
-использованием операторов CUBE и GROUPING;*/
+a. СЃРѕР·РґР°С‚СЊ Р·Р°РїСЂРѕСЃ, РєРѕС‚РѕСЂС‹Р№ СЃСѓРјРјРёСЂСѓРµС‚ РёРЅС„РѕСЂРјР°С†РёСЋ (СЃС‚РѕР»Р±РµС†
+Quantity) РёР· С‚Р°Р±Р»РёС†С‹ Production.ProductInventory СЃ
+РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј РѕРїРµСЂР°С‚РѕСЂРѕРІ CUBE Рё GROUPING;*/
 SELECT ProductID AS ID, GROUPING(Quantity) AS Grouping FROM Production.ProductInventory
 GROUP BY CUBE(ProductID, Quantity);

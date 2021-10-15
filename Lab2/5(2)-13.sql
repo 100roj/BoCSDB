@@ -1,4 +1,4 @@
-/*Определить товар с минимальным количеством, большим 0.*/
+п»ї/*РћРїСЂРµРґРµР»РёС‚СЊ С‚РѕРІР°СЂ СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј РєРѕР»РёС‡РµСЃС‚РІРѕРј, Р±РѕР»СЊС€РёРј 0.*/
 Select ProductID, Quantity
 From Production.ProductInventory
 Where (Quantity<=(Select min(Quantity) from Production.ProductInventory where Quantity<>0)) and (Quantity<>0)

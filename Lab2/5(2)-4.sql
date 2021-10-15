@@ -1,5 +1,5 @@
-/*Íàéòè êîëè÷åñòâî òîâàðà «êàðòèíà» (Paint) ñ öåíîé áîëåå $15.
-Ðàáîòà ñ òàáëèöåé Production.ProductInventory.*/
+ï»¿/*ÐÐ°Ð¹Ñ‚Ð¸ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð° Â«ÐºÐ°Ñ€Ñ‚Ð¸Ð½Ð°Â» (Paint) Ñ Ñ†ÐµÐ½Ð¾Ð¹ Ð±Ð¾Ð»ÐµÐµ $15.
+Ð Ð°Ð±Ð¾Ñ‚Ð° Ñ Ñ‚Ð°Ð±Ð»Ð¸Ñ†ÐµÐ¹ Production.ProductInventory.*/
 Select Sum(Availability)
 from Production.Location
 Where (CHARINDEX('Paint', Name)!=0) AND (CostRate>15)

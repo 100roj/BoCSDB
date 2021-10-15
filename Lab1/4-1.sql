@@ -1,3 +1,3 @@
-/*Создать  запрос  к  таблице Production.Productс  полями ProductNumber, Nameи Class. Провести сортировку по значениям в поле Class.*/
+п»ї/*РЎРѕР·РґР°С‚СЊ  Р·Р°РїСЂРѕСЃ  Рє  С‚Р°Р±Р»РёС†Рµ Production.ProductСЃ  РїРѕР»СЏРјРё ProductNumber, NameРё Class. РџСЂРѕРІРµСЃС‚Рё СЃРѕСЂС‚РёСЂРѕРІРєСѓ РїРѕ Р·РЅР°С‡РµРЅРёСЏРј РІ РїРѕР»Рµ Class.*/
 Select ProductNumber, Name, Class from Production.Product
 Order by Class

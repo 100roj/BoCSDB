@@ -1,4 +1,4 @@
-/*Найти количество товара «рамка» (Frame).*/
+п»ї/*РќР°Р№С‚Рё РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР° В«СЂР°РјРєР°В» (Frame).*/
 Select Sum(Availability)
 from Production.Location
 Where CHARINDEX('Frame', Name)!=0

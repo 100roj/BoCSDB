@@ -1,5 +1,5 @@
-/*Показать список людей (поля FirstName, LastName), в котором указано, имеется ли логин идентификатор (LoginID) или нет, 
-из таблиц HumanResources.Employee, Person.Person, используя RIGHT OUTER JOIN */
+п»ї/*РџРѕРєР°Р·Р°С‚СЊ СЃРїРёСЃРѕРє Р»СЋРґРµР№ (РїРѕР»СЏ FirstName, LastName), РІ РєРѕС‚РѕСЂРѕРј СѓРєР°Р·Р°РЅРѕ, РёРјРµРµС‚СЃСЏ Р»Рё Р»РѕРіРёРЅ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ (LoginID) РёР»Рё РЅРµС‚, 
+РёР· С‚Р°Р±Р»РёС† HumanResources.Employee, Person.Person, РёСЃРїРѕР»СЊР·СѓСЏ RIGHT OUTER JOIN */
 SELECT FirstName, LastName, LoginID
 FROM HumanResources.Employee AS HumanResources
 RIGHT OUTER JOIN Person.Person AS Person

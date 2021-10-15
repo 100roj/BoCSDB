@@ -1,5 +1,5 @@
-/*Показать подкатегории продуктов (ProductSubcategoryID из таблицы Production.Product), 
-которые имеют несколько цветов начинающихся на «B», используя SELF JOIN */
+п»ї/*РџРѕРєР°Р·Р°С‚СЊ РїРѕРґРєР°С‚РµРіРѕСЂРёРё РїСЂРѕРґСѓРєС‚РѕРІ (ProductSubcategoryID РёР· С‚Р°Р±Р»РёС†С‹ Production.Product), 
+РєРѕС‚РѕСЂС‹Рµ РёРјРµСЋС‚ РЅРµСЃРєРѕР»СЊРєРѕ С†РІРµС‚РѕРІ РЅР°С‡РёРЅР°СЋС‰РёС…СЃСЏ РЅР° В«BВ», РёСЃРїРѕР»СЊР·СѓСЏ SELF JOIN */
 SELECT DISTINCT Production1.ProductSubcategoryID, Production1.Color
 FROM Production.Product AS Production1
 INNER JOIN Production.Product AS Production2

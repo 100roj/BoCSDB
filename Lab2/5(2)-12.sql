@@ -1,4 +1,4 @@
-/*Определить дату последней модификации каждого товара.*/
+п»ї/*РћРїСЂРµРґРµР»РёС‚СЊ РґР°С‚Сѓ РїРѕСЃР»РµРґРЅРµР№ РјРѕРґРёС„РёРєР°С†РёРё РєР°Р¶РґРѕРіРѕ С‚РѕРІР°СЂР°.*/
 Select ProductID, Max(ModifiedDate)
 From Production.ProductInventory
 Group by ProductID

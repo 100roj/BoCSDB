@@ -1,5 +1,5 @@
-/*Показать комбинированный список таблиц Person.EmailAddress, Person.Person по полям BusinessEntityID, 
-rowguid, ModifiedDate, используя UNION. */
+п»ї/*РџРѕРєР°Р·Р°С‚СЊ РєРѕРјР±РёРЅРёСЂРѕРІР°РЅРЅС‹Р№ СЃРїРёСЃРѕРє С‚Р°Р±Р»РёС† Person.EmailAddress, Person.Person РїРѕ РїРѕР»СЏРј BusinessEntityID, 
+rowguid, ModifiedDate, РёСЃРїРѕР»СЊР·СѓСЏ UNION. */
 SELECT BusinessEntityID, rowguid, ModifiedDate
 FROM Person.EmailAddress
 UNION

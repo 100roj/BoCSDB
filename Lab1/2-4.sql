@@ -1,4 +1,4 @@
-/*Создание  запроса  с предикатом BETWEEN.  Показать  строки, имеющие SO вполе ProductNumberили строки товара tights(TG) с ценой от $50до $180.*/
+п»ї/*РЎРѕР·РґР°РЅРёРµ  Р·Р°РїСЂРѕСЃР°  СЃ РїСЂРµРґРёРєР°С‚РѕРј BETWEEN.  РџРѕРєР°Р·Р°С‚СЊ  СЃС‚СЂРѕРєРё, РёРјРµСЋС‰РёРµ SO РІРїРѕР»Рµ ProductNumberРёР»Рё СЃС‚СЂРѕРєРё С‚РѕРІР°СЂР° tights(TG) СЃ С†РµРЅРѕР№ РѕС‚ $50РґРѕ $180.*/
 Select ProductNumber, Name, ListPrice, Color, Size, Weight
 from Production.Product where
 	(ListPrice Between 50 and 180) and (ProductNumber like '%tg%')

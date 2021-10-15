@@ -1,3 +1,3 @@
-/* Показать  все  записи  из  таблицы Person.Person.  Включить только поля FirstName, LastName иMiddleName.*/
+п»ї/* РџРѕРєР°Р·Р°С‚СЊ  РІСЃРµ  Р·Р°РїРёСЃРё  РёР·  С‚Р°Р±Р»РёС†С‹ Person.Person.  Р’РєР»СЋС‡РёС‚СЊ С‚РѕР»СЊРєРѕ РїРѕР»СЏ FirstName, LastName РёMiddleName.*/
 Select FirstName, LastName, MiddleName
 From Person.Person

@@ -1,4 +1,4 @@
-/* Создание запроса с предикатом OR. Изменить предыдущий запрос, включив в результаты строки, имеющие TGили SOв поле ProductNumber.*/
+п»ї/* РЎРѕР·РґР°РЅРёРµ Р·Р°РїСЂРѕСЃР° СЃ РїСЂРµРґРёРєР°С‚РѕРј OR. РР·РјРµРЅРёС‚СЊ РїСЂРµРґС‹РґСѓС‰РёР№ Р·Р°РїСЂРѕСЃ, РІРєР»СЋС‡РёРІ РІ СЂРµР·СѓР»СЊС‚Р°С‚С‹ СЃС‚СЂРѕРєРё, РёРјРµСЋС‰РёРµ TGРёР»Рё SOРІ РїРѕР»Рµ ProductNumber.*/
 Select ProductNumber, Name, ListPrice, Color, Size, Weight
 from Production.Product where
 	ListPrice < 100 and (ProductNumber like '%So%' or ProductNumber like '%tg%')

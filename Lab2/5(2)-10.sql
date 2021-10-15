@@ -1,4 +1,4 @@
-/*Определить количество товара на каждой полке.*/
+п»ї/*РћРїСЂРµРґРµР»РёС‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР° РЅР° РєР°Р¶РґРѕР№ РїРѕР»РєРµ.*/
 Select Shelf, Sum(Quantity)
 From Production.ProductInventory
 Group by Shelf

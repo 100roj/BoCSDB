@@ -1,3 +1,3 @@
-/* Найти среднее количество товара в наличии (Avalability).*/
+п»ї/* РќР°Р№С‚Рё СЃСЂРµРґРЅРµРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР° РІ РЅР°Р»РёС‡РёРё (Avalability).*/
 Select AVG(Availability)
 from Production.Location
