@@ -1,0 +1,3 @@
+﻿/*Показать поля ProductID, [Name] из таблицы Production.Product с применением функции COALESCE(). Показать поле Meauserement, так, чтобы, если значение в поле Color известно, то показать его, а иначе, показать значение в поле Weight. Если и в поле Weight значение неизвестно, то вывести значение 'UNKNOWN'.*/
+SELECT ProductID, [Name], COALESCE(Color,CAST([Weight] AS VARCHAR(40)), 'UNKNOWN') AS Meauserement
+FROM Production.Product
