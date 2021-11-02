@@ -1,4 +1,4 @@
-﻿/*Показать поля ProductID,BusinessEntityID, AverageLeadTime, StandardPrice из таблицы Purchasing.ProductVendor, где средний промежуток времени (в днях) между размещением заказа у продавца и получением приобретенного продукта (AverageLeadTime) больше 16, а обычная отпускная цена продавца (StandardPrice) находится в диапазоне от $ 50 до $60. Использовать оператор BETWEEN.*/
+﻿/*3+4. Показать поля ProductID, StartDate, EndDate, ListPrice из таблицы Production. ProductListPriceHistory. Показать только те записи, для которых стоимость (ListPrice) больше $50 и меньше $60 и известна дата окончания стоимости продукта.(EndDate). Использовать оператор BETWEEN*/
 SELECT ProductID, StartDate, EndDate, ListPrice
 FROM Production.ProductListPriceHistory
 WHERE (ListPrice BETWEEN 50 AND 60) AND (EndDate IS NOT NULL)
