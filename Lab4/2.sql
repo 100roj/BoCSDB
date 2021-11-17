@@ -1,7 +1,4 @@
-﻿/* Показать количество продуктов и размер, для которого представлено максимальное количество 
-продуктов (Таблица Production.Product). */
-SELECT Size, COUNT(ProductID) AS [Count]
+﻿/*2. Показать товар, с максимальной разницей между ценой и стандартной стоимостью. (Таблица Production.Product)*/
+SELECT [Name], (ABS(ListPrice-StandardCost)) AS Diff
 FROM Production.Product
-WHERE Size IS NOT NULL
-GROUP BY Size
-HAVING COUNT(ProductID) >= ALL(SELECT COUNT(ProductID) FROM Production.Product WHERE Size IS NOT NULL GROUP BY Size)
+WHERE (ABS(ListPrice-StandardCost) = (SELECT MAX(ABS(ListPrice-StandardCost)) FROM Production.Product))

@@ -1,4 +1,4 @@
-﻿/*5. Из таблицы Production.ProductModel показать ID модели товара (ProductModelID), наименование товара ([Name]) и описание товара в каталоге CatalogDescription. Показать только те товары, у которых в названии содержится слово 'gloves'*/
-SELECT ProductModelID, [Name], CatalogDescription
-FROM Production.ProductModel
-WHERE [Name] LIKE '%gloves%'
+﻿/*5. Из таблицы Person.EmailAddress показать все идентификационные номера e-mail адресов (EmailAddressID) и сами e-mail адреса (EmailAddress), содержащие в названии 'la'.*/
+SELECT EmailAddressID, EmailAddress
+FROM Person.EmailAddress
+WHERE EmailAddress LIKE '%la%'

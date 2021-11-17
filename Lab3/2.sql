@@ -1,7 +1,5 @@
-﻿/*Показать список продуктов (поле Name) в котором указано, есть ли у продукта единицы измерения веса или нет, из таблиц 
-Production.Product, Production.UnitMeasure, используя LEFT OUTER JOIN */
-SELECT Product.Name, UnitMeasure.Name
-FROM 
-Production.Product AS Product
-LEFT OUTER JOIN Production.UnitMeasure AS UnitMeasure
-ON Product.WeightUnitMeasureCode=UnitMeasure.UnitMeasureCode;
+﻿/*2. Показать список товаров (поле Name), в котором указано, указана ли электронная почта рецензента товара или нет, из таблиц Production.Product, Production.ProductRewiew, используя LEFT OUTER JOIN.*/
+SELECT Name, EmailAddress
+FROM Production.Product
+LEFT OUTER JOIN Production.ProductReview AS Review
+ON Review.EmailAddress IS NOT NULL

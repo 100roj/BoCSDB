@@ -1,3 +1,3 @@
-﻿/*Показать все поля из таблицы Production.BillOfMaterials.*/
+﻿/*1. Показать все поля из таблицы Production.ProductModelProductDescriptionCulture.*/
 SELECT *
-FROM Production.BillOfMaterials
+FROM Production.ProductModelProductDescriptionCulture

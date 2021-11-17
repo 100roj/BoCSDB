@@ -1,7 +1,6 @@
-﻿/*Показать список ProductID, которые содержатся в таблице Production.Product, 
-но не содержатся в таблице Production. ProductDocument. */
-SELECT ProductID
-FROM Production.Product
+﻿/*8. Показать список BusinessEntityID, которые содержатся и в таблице Person.Person, и в таблице HumanResources.EmployeePayHistory*/
+SELECT BusinessEntityID
+FROM Person.Person
 EXCEPT
-SELECT ProductID
-FROM Production.ProductDocument
+SELECT BusinessEntityID
+FROM HumanResources.EmployeePayHistory

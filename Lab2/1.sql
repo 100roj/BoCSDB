@@ -1,3 +1,3 @@
-﻿/*Найти максимальную дату рождения из таблицы HumanResources.Employee.*/
-SELECT MAX(BirthDate) AS MaxBirthDate
+﻿/*1. Найти количество email из таблицы Person.EmailAddress*/
+SELECT Count(*) as 'Count'
 FROM HumanResources.Employee

@@ -1,6 +1,5 @@
-﻿/*Показать список людей (поля FirstName, LastName), в котором указано, имеется ли логин идентификатор (LoginID) или нет, 
-из таблиц HumanResources.Employee, Person.Person, используя RIGHT OUTER JOIN */
-SELECT FirstName, LastName, LoginID
-FROM HumanResources.Employee AS HumanResources
+﻿/*3. Показать список людей (поля FirstName, LastName), в котором указано, есть ли у человека ставка оплаты (Rate) или нет, из таблиц HumanResources.EmployeePayHistory, Person.Person, используя RIGHT OUTER JOIN.*/
+SELECT FirstName, LastName, Rate
+FROM HumanResources.EmployeePayHistory AS PayHistory
 RIGHT OUTER JOIN Person.Person AS Person
-ON HumanResources.BusinessEntityID=Person.BusinessEntityID
+ON PayHistory.BusinessEntityID=Person.BusinessEntityID

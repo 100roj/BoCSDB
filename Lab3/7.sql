@@ -1,7 +1,6 @@
-﻿/*Показать комбинированный список таблиц Person.EmailAddress, Person.Person по полям BusinessEntityID, 
-rowguid, ModifiedDate, используя UNION. */
-SELECT BusinessEntityID, rowguid, ModifiedDate
-FROM Person.EmailAddress
+﻿/*7. Показать комбинированный список таблиц Purchasing.ProductVendor по полям ProductID, StandartPrice, Purchasing.PurchaseOrderDetail по полям ProductID, UnitPrice, используя UNION.*/
+SELECT ProductID, StandardPrice
+FROM Purchasing.ProductVendor
 UNION
-SELECT BusinessEntityID, rowguid, ModifiedDate
-FROM Person.Person
+SELECT ProductID, UnitPrice
+FROM Purchasing.PurchaseOrderDetail
