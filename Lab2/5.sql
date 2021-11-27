@@ -2,4 +2,5 @@
 SELECT ProductID, SUM(ListPrice) as PriceSum,
 RANK () OVER (ORDER BY Count(ProductID)) as Rank
 FROM Production.ProductListPriceHistory
+WHERE ListPrice>50
 GROUP BY ProductID
